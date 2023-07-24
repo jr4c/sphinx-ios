@@ -228,10 +228,6 @@ extension SphinxSocketManager {
     func didReceiveMessage(type: String, messageJson: JSON) {
         let isConfirmation = type == "confirmation"
         
-        if let contactJson = messageJson["contact"].dictionary {
-            let _ = UserContact.getOrCreateContact(contact: JSON(contactJson))
-        }
-        
         if let message = TransactionMessage.insertMessage(m: messageJson).0 {
             
             if let chat = message.chat {
@@ -264,7 +260,7 @@ extension SphinxSocketManager {
         }
         
         if let chat = Chat.insertChat(chat: chatJson) {
-            chat.setChatMessagesAsSeen(shouldSync: false, shouldSave: false)
+            chat.setChatMessagesAsSeen(shouldSync: false)
         }
     }
     

@@ -14,9 +14,6 @@ extension NewChatTableDataSource {
     enum CollectionViewSection: Int, CaseIterable {
         case messages
     }
-
-    typealias BubbleCell = NewMessageTableViewCell
-    typealias NoBubbleCell = MessageNoBubbleTableViewCell
     
     typealias DataSource = UITableViewDiffableDataSource<CollectionViewSection, MessageTableCellState>
     typealias DataSourceSnapshot = NSDiffableDataSourceSnapshot<CollectionViewSection, MessageTableCellState>

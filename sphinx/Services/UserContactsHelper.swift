@@ -68,7 +68,7 @@ class UserContactsHelper {
                 } else {
                     if let chat = Chat.insertChat(chat: chat) {
                         if chat.seen {
-                            chat.setChatMessagesAsSeen(shouldSync: false, shouldSave: false)
+                            chat.setChatMessagesAsSeen(shouldSync: false)
                         }
                     }
                 }

@@ -149,7 +149,7 @@
                                                         <rect key="frame" x="16" y="16" width="215.66666666666666" height="239"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="Text"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -199,7 +199,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="lIi-3z-ngV" secondAttribute="bottom" priority="750" id="26A-HI-Kn8"/>
+                                    <constraint firstItem="ZEF-0M-XiI" firstAttribute="top" secondItem="ciK-GH-T3T" secondAttribute="top" constant="8" id="Ast-Mb-OQw"/>
                                     <constraint firstItem="iGg-na-ZlG" firstAttribute="top" secondItem="JWP-28-j2q" secondAttribute="bottom" id="P20-oc-Ld2"/>
+                                    <constraint firstItem="vYP-Ys-cll" firstAttribute="top" secondItem="ciK-GH-T3T" secondAttribute="top" constant="8" id="a1P-xQ-IGv"/>
                                     <constraint firstAttribute="bottom" secondItem="cBm-ep-rp0" secondAttribute="bottom" id="idF-sk-lZ2"/>
                                     <constraint firstItem="cBm-ep-rp0" firstAttribute="top" secondItem="ciK-GH-T3T" secondAttribute="top" id="k0i-d0-bjg"/>
                                     <constraint firstItem="wr9-wn-CmQ" firstAttribute="top" secondItem="ciK-GH-T3T" secondAttribute="top" id="mGJ-cQ-gGl"/>
@@ -276,6 +278,9 @@
         </namedColor>
         <namedColor name="SentMsgBG">
             <color red="0.8666666666666667" green="0.92941176470588238" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.23529411764705882" green="0.24705882352941178" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

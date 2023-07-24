@@ -178,6 +178,7 @@ class NewChatViewController: NewKeyboardHandlerViewController {
         configurePinnedMessageView()
         bottomView.updateFieldStateFrom(chat)
         showPendingApprovalMessage()
+        chatTableDataSource?.processChatAliases()
     }
     
     func setDelegates() {

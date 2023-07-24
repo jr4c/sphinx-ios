@@ -326,8 +326,7 @@ public class Chat: NSManagedObject {
     }
     
     func setChatMessagesAsSeen(
-        shouldSync: Bool = true,
-        shouldSave: Bool = true
+        shouldSync: Bool = true
     ) {
         let receivedUnseenMessages = getReceivedUnseenMessages()
         
